@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compress IMAGE - Best Quality Image Compression</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <nav class="navbar">
+        <h1>IMG Compressor</h1>
+    </nav>
+    
+    <main class="container">
+        <div class="intro-text">
+            <h1>Compress IMAGE</h1>
+            <p>Compress JPG, PNG, JPEG images with the best quality and compression.</p>
+            <p>Reduce the filesize of your images at once.</p>
+        </div>
+
+        <div class="compressor-box">
+            <div id="dropZone" class="drop-zone">
+                <i class="fas fa-file-upload" style="font-size: 48px; color: var(--secondary-color);"></i>
+                <p>Drop image here or click to upload</p>
+                <input type="file" id="fileInput" accept="image/*" hidden>
+            </div>
+            <div class="preview-section">
+                <img id="previewImage" alt="Preview" hidden>
+                <p id="uploadedFileSize"></p>
+                <div class="compression-controls">
+                    <label for="compressionSlider">Compression: <span id="compressionValue">50%</span></label>
+                    <input type="range" id="compressionSlider" min="0" max="100" value="0">
+                    <p id="estimatedCompressedSize"></p>
+                    <p id="qualityWarning" hidden></p>
+                    <button id="compressBtn">Compress Image</button>
+                </div>
+            </div>
+            <div id="resultContainer" class="result-section" hidden>
+                <p id="compressionFeedback"></p>
+                <p id="sizeComparison"></p>
+                <button id="downloadBtn">Download Compressed Image</button>
+            </div>
+            <div id="loadingOverlay" class="loading-overlay" hidden>
+                <div class="loading"></div>
+            </div>
+        </div>
+        <div id="loadingAnimation" class="loading" hidden></div>
+        <div id="mascot" class="mascot">^_^</div>
+
+    </main>
+
+    <footer>
+        <p>Made with ❤️ Made in India!</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/browser-image-compression/2.0.0/browser-image-compression.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
