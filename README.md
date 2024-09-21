@@ -14,7 +14,6 @@ This is a web-based tool for compressing images. It allows users to upload image
 - HTML
 - CSS
 - JavaScript
-- [Browser Image Compression](https://www.npmjs.com/package/browser-image-compression) library
 
 ## How to Use
 
